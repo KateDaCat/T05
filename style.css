@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffcf6;
+    color: #262328;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: white;
+    border-bottom: 1px solid #ead8b7;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background: #ffe49a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #332d27;
+
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #df8d0b;
+    color: white;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    text-align: center;
+    padding: 70px 20px 50px;
+}
+
+.eyebrow {
+    color: #a96300;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.intro h1 {
+    margin: 10px 0 20px;
+
+    font-size: 44px;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 0 auto;
+
+    line-height: 1.6;
+    font-size: 18px;
+    color: #5c554d;
+}
+
+
+/* =========================
+   CHART CARDS
+========================= */
+
+.chart-card {
+    background: white;
+
+    border: 1px solid #ead8b7;
+    border-radius: 16px;
+
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.chart-heading {
+    margin-bottom: 25px;
+}
+
+.chart-number {
+    color: #a96300;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.chart-heading h2 {
+    margin: 5px 0 10px;
+    font-size: 26px;
+}
+
+.chart-heading p {
+    color: #665f57;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   D3 CHART CONTAINERS
+========================= */
+
+.chart-container {
+    width: 100%;
+    min-height: 350px;
+
+    background: #fafafa;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.chart-container svg {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 60px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #2e2923;
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intro h1 {
+        font-size: 32px;
+    }
+
+    .chart-card {
+        padding: 20px;
+    }
+
+}

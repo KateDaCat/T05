@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PowerSmart | Energy Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <div class="logo">⚡</div>
+                <span>PowerSmart</span>
+            </div>
+
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Televisions</a>
+                <a href="#">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="intro">
+            <p class="eyebrow">AUSTRALIAN ENERGY DATA</p>
+
+            <h1>Energy Insights Dashboard</h1>
+
+            <p class="intro-text">
+                Explore television energy consumption and Australian
+                electricity price data through interactive D3 visualisations.
+            </p>
+        </section>
+
+
+        <!-- Scatter Plot -->
+        <section class="chart-card">
+            <div class="chart-heading">
+                <p class="chart-number">CHART 1</p>
+                <h2>Energy Consumption vs Star Rating</h2>
+                <p>
+                    Explore the relationship between television energy
+                    consumption and energy efficiency star ratings.
+                </p>
+            </div>
+
+            <div id="scatter-chart" class="chart-container"></div>
+        </section>
+
+
+        <!-- Donut Chart -->
+        <section class="chart-card">
+            <div class="chart-heading">
+                <p class="chart-number">CHART 2</p>
+                <h2>Energy Consumption by Screen Technology</h2>
+                <p>
+                    Compare energy consumption across different television
+                    screen technologies.
+                </p>
+            </div>
+
+            <div id="donut-chart" class="chart-container"></div>
+        </section>
+
+
+        <!-- Bar Chart -->
+        <section class="chart-card">
+            <div class="chart-heading">
+                <p class="chart-number">CHART 3</p>
+                <h2>Energy Consumption of 55-inch TVs</h2>
+                <p>
+                    Compare the average energy consumption of different screen
+                    technologies for 55-inch televisions.
+                </p>
+            </div>
+
+            <div id="bar-chart" class="chart-container"></div>
+        </section>
+
+
+        <!-- Line Chart -->
+        <section class="chart-card">
+            <div class="chart-heading">
+                <p class="chart-number">CHART 4</p>
+                <h2>Australian Spot Power Prices</h2>
+                <p>
+                    Explore changes in Australian electricity spot prices
+                    over time.
+                </p>
+            </div>
+
+            <div id="line-chart" class="chart-container"></div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 PowerSmart Australia |
+            COS30045 Data Visualisation
+        </p>
+    </footer>
+
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Individual charts -->
+    <script src="scatter.js"></script>
+    <script src="donut.js"></script>
+    <script src="bar.js"></script>
+    <script src="line.js"></script>
+
+</body>
+
+</html>
