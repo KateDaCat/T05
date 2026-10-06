@@ -65,4 +65,23 @@ d3.csv("data/Ex5_TV_energy.csv", d => {
         .attr("r", 4)
         .attr("fill", "steelblue")
         .attr("opacity", 0.6);
+
+        // X-axis label
+    svg.append("text")
+        .attr("x", 360)
+        .attr("y", 440)
+        .attr("text-anchor", "middle")
+        .style("font-family", "sans-serif")
+        .style("font-size", "14px")
+        .text("Star Rating");
+
+    // Y-axis label
+    svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("x", -215)
+        .attr("y", 18)
+        .attr("text-anchor", "middle")
+        .style("font-family", "sans-serif")
+        .style("font-size", "14px")
+        .text("Energy Consumption (kWh/year)");
 });
